@@ -8,16 +8,16 @@ let totalSlides = sliderImageMobile.length;
 let currentSlide = 0;
 
 function hideSlider(){
-    sliderImageMobile.forEach(item => item.classList.remove('on'));
-    sliderImageDesktop.forEach(item => item.classList.remove('on'));
+    sliderImageMobile.forEach(item => item.style.display = "none");
+    sliderImageDesktop.forEach(item => item.style.display = "none");
     sliderContent.forEach(item => item.style.display = "none");
 }
 
 function showSlider(){
     if (window.innerWidth >= 1000){
-        sliderImageDesktop[currentSlide].classList.add('on');
+        sliderImageDesktop[currentSlide].style.display = "block";
     } else {
-        sliderImageMobile[currentSlide].classList.add('on');
+        sliderImageMobile[currentSlide].style.display = "block";
     }
     sliderContent[currentSlide].style.display = "flex";
 }
