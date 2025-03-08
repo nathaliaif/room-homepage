@@ -17,11 +17,23 @@
 .slider__button-container {
     position: absolute;
     top: 312px;
-    /* bottom: translateY(-312px); */
     right: 0;
     display: flex;
+    justify-content: flex-end;
     gap: 0;
+
+    .slider-timer{
+        align-self: flex-start;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 3px;
+        background: var(--black);
+        transition: width 15s linear;
+      }
 }
+
 
 .slider__button {
     padding: 1.5rem;
@@ -90,7 +102,11 @@
         top: auto;
         bottom: 0;
         left: 60%;
-        align-items: flex-end;
+        justify-content: flex-start;
+
+        .slider-timer {
+
+        }
     }
 
     .slider__button {
