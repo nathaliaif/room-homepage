@@ -84,7 +84,8 @@
         position: relative;
         object-fit: cover;
         object-position: 0% 65%;
-        height: 55%;
+        height: 100%;
+        overflow: hidden;
         border: 1px solid pink;
     }
 
