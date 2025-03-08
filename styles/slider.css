@@ -1,0 +1,101 @@
+/* Start Slider */
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.slider__image {
+    display: none;
+    object-fit: cover;
+    width: 100%;
+    height: 360px;
+    transition: .3s;
+}
+
+.on {
+    display: block;
+}
+
+.slider__container {
+    display: none;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 4rem 2rem;
+
+    h2 {
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        font-weight: 600;
+        color: var(--black);
+        margin-top: 2rem;
+    }
+}
+
+.slider__button-container {
+    position: absolute;
+    top: 312px;
+    right: 0;
+    display: flex;
+    gap: 0;
+}
+
+.slider__button {
+    padding: 1.5rem;
+    border: none;
+}
+
+#slider-back {
+    background: var(--black) url('../images/icon-angle-left.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    z-index: 10;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#slider-forward {
+    background: var(--black) url('../images/icon-angle-right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    z-index: 10;
+}
+
+/* End Slider */
+
+@media screen and (min-width: 1000px){
+    .slider {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        height: 60%;
+        border: 1px solid red;
+    }
+    
+    .slider__image {
+        position: relative;
+        object-fit: cover;
+        object-position: 0% 65%;
+        height: 55%;
+        border: 1px solid pink;
+    }
+
+    .slider__button-container {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .slider__button {
+        height: 25px;
+        width: 25px;
+    }
+
+}

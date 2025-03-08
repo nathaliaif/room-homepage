@@ -3,65 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Room homepage</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=League+Spartan:wght@100..900&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/slider.css">
   <script src="scripts/script.js" defer></script>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="scripts/slider.js" defer></script>
 </head>
 <body>
-  <aside>
-    <nav>
-      <ul>
-        <li><a>Home</a></li>
-        <li><a>Shop</a></li>
-        <li><a>About</a></li>
-        <li><a>Contact</a></li>
+  <header>
+    <img src="images/logo.svg" alt="Room logo" class="header-logo">
+  </header>
+  
+  <!-- Navigation -->
+  <nav class="main-nav hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+    </label>
+    <img src="images/logo.svg" alt="Room logo" class="main-nav__logo">
+    <ul class="menu__box">
+        <li><a>home</a></li>
+        <li><a>shop</a></li>
+        <li><a>about</a></li>
+        <li><a>contact</a></li>
       </ul>
     </nav>
-  </aside>
 
+    <!-- Start Slider -->
+    <div class="slider">
+      <img class="slider__image slider-image1" src="images/mobile-image-hero-1.jpg" alt="Image of a chair with a bonsai tree on a table">
+      <img class="slider__image slider-image2" src="images/mobile-image-hero-2.jpg" alt="Image of a chair with a bonsai tree on a table">
+      <img class="slider__image slider-image3" src="images/mobile-image-hero-3.jpg" alt="Image of a chair with a bonsai tree on a table">
+      <div class="slider__button-container">
+        <button id="slider-back" class="slider__button"></button>
+        <button id="slider-forward" class="slider__button"></button>
+      </div>
+      <div class="slider__container slider-content1">
+        <h2>Discover innovative ways to decorate</h2>
+        <p class="plain-text">
+          We provide unmatched quality, comfort, and style for property owners across the country. 
+          Our experts combine form and function in bringing your vision to life. Create a room in your 
+          own style with our collection and make your property a reflection of you and what you love.
+        </p>
+        <a href="" id="shop">Shop now <img src="images/icon-arrow.svg" alt=""></a>
+      </div>
 
-  Discover innovative ways to decorate
-
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
-
-  Shop now
-
-  We are available all across the globe
-
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+      <div class="slider__container slider-content2">
+        <h2>  We are available all across the globe</h2>
+        <p class="plain-text">
+          With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+  Locally, we're in most major cities throughout the country. Find the branch nearest you using our 
   store locator. Any questions? Don't hesitate to contact us today.
+        </p>
+        <a href="">Shop now <img src="images/icon-arrow.svg" alt=""></a>
+      </div>
 
-  Shop now
-
-  Manufactured with the best materials
-
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+      <div class="slider__container slider-content3">
+        <h2> Manufactured with the best materials</h2>
+        <p class="plain-text">
+          Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
   to ensure that every product is made as perfect and as consistent as possible. With three decades of 
   experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+        <a href="">Shop now <img src="images/icon-arrow.svg" alt=""></a>
+      </div>
+    </div>
+    <!-- End Slider -->
+    <main>
+    <div class="content-container">
+      <img src="images/image-about-dark.jpg" alt="Image of chair in a dark ambiance">
+      <div class="content__texts">
+        <h2>
+          About our furniture
+        </h2>
+        <p class="plain-text">
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+      <img src="images/image-about-light.jpg" alt="Image of chair in a light ambiance">
+    </div>
+  </main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Nathalia Irokawa</a>.
+  </footer>
 </body>
 </html>
