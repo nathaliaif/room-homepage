@@ -181,6 +181,9 @@ header {
         grid-template-columns: 4fr 5fr 4fr;
 
         .content__texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             padding: 5rem 4rem;
         }
 

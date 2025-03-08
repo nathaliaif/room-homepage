@@ -22,6 +22,7 @@ function showSlider(){
     sliderContent[currentSlide].style.display = "flex";
 }
 
+hideSlider();
 showSlider();
 
 function nextSlider() {
