@@ -1,11 +1,13 @@
 :root {
     --league-spartan: "League Spartan", sans-serif;
-    --signature: "Cherish", cursive;
+    --signature: "Libre Bodoni", serif;
     --dark-gray: hsl(0, 0%, 63%);
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
     --very-dark-gray: hsl(0, 0%, 27%);
-    --primary: #e87d45;
+    --primary: #FFB200;
+    --primary2: #e6a100;
+    --secondary: 245, 239, 231;
 }
 
 * {
@@ -247,35 +249,45 @@ header {
             border: none;
             background: var(--primary);
 
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-family: var(--signature);
+            color: var(--black);
 
             &:hover {
                 cursor: pointer;
+                background-color: var(--primary2);
             }
         }
         
         .attribution {
             display: flex;
             align-items: center;
-            left: 1rem;
-            width: 0.1rem;
+            margin-left: 1rem;
+            width: 0rem;
             height: auto;
             padding: 1.3rem 2rem 1.3rem 0rem;
             border-radius: 50px;
             overflow: hidden;
             white-space: nowrap;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            color: var(--very-dark-gray);
+            background: rgba(var(--secondary), 0.8);
             transition: width 0.5s, padding 0.5s;
 
             a {
                 margin-left: 0.3rem;
+                color: var(--black);
+                font-weight: 600;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
 
         #credits__button:hover ~ .attribution, .attribution:hover{
-            width: 32rem;
-            padding-left: 5.5rem;
+            width: 35rem;
+            padding-left: 4.5rem;
         }
     }
 
