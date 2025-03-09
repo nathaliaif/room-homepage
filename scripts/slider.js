@@ -7,7 +7,7 @@ const sliderTimer = document.querySelector(".slider-timer");
 
 let totalSlides = sliderImageMobile.length;
 let currentSlide = 0;
-let timer = 15000;
+let timer = 20000;
 
 function hideSlider(){
     sliderImageMobile.forEach(item => item.style.display = "none");
@@ -42,6 +42,7 @@ function prevSlider() {
 btnBack.addEventListener("click", prevSlider);
 btnNext.addEventListener("click", nextSlider);
 
+// Timer
 function startTimer() {
     sliderTimer.style.width = "0%";
     sliderTimer.style.transition = "none"; // Reset transition
