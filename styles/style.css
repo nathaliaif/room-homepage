@@ -187,7 +187,7 @@ header {
         justify-content: flex-start;
         align-items: center;
         column-gap: 4rem;
-        padding: 4rem 3rem 0rem 3rem;
+        padding: 3rem 3rem 0rem 3rem;
     }
     
     .main-nav__logo {
@@ -218,7 +218,7 @@ header {
             color: var(--white);
         }
     }
-    main{
+    main {
         height: 40%;
     }
 
@@ -254,7 +254,7 @@ header {
 
     .credits {
         position: absolute;
-        bottom: 5rem;
+        bottom: 4rem;
         left: 4rem;
         display: flex;
         align-items: center;
@@ -270,6 +270,7 @@ header {
             border: none;
             overflow: hidden;
             background: var(--primary);
+            z-index: 10;
 
             -webkit-box-shadow: 6px 7px 20px -7px rgba(0,0,0,0.75);
             -moz-box-shadow: 6px 7px 20px -7px rgba(0,0,0,0.75);
@@ -298,8 +299,12 @@ header {
             white-space: nowrap;
             font-size: 1.1rem;
             color: var(--very-dark-gray);
+            backdrop-filter: invert(40%);
+            /* background: transparent; */
+            /* backdrop-filter: blur(15px); */
             background: rgba(var(--secondary), 0.8);
             transition: width 0.5s, padding 0.5s;
+            z-index: 1;
 
             a {
                 margin-left: 0.3rem;

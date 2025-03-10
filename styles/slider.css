@@ -32,8 +32,8 @@
     /* bottom: 0; */
     height: 5px;
     transition: width 20s linear;
-    background: var(--primary);
-    filter: contrast(40%);
+    background: var(--black);
+    /* filter: contrast(40%); */
     /* border: 1px solid red; */
 }
 
