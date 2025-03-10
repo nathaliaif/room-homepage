@@ -39,9 +39,6 @@ function prevSlider() {
     showSlider();
 }
 
-btnBack.addEventListener("click", prevSlider);
-btnNext.addEventListener("click", nextSlider);
-
 // Timer
 function startTimer() {
     sliderTimer.style.width = "0%";
@@ -61,7 +58,7 @@ function nextSliderWithTimer(){
 startTimer();
 let sliderInterval = setInterval(nextSliderWithTimer, timer);
 
-// Reset timer when a button is clicked
+// Reset timer when a button is clicked and add the slider change function
 btnBack.addEventListener("click", () => {
     clearInterval(sliderInterval);
     prevSlider();
